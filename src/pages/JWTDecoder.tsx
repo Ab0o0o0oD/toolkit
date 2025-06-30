@@ -38,7 +38,7 @@ export const JWTDecoder = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>JWT Decoder:</h2>
+            <h2 className={styles.title}>JWT Decoder</h2>
 
             <div className={styles.jwtDecoderContainer}>
                 <div className={styles.encodedContainer}>
