@@ -65,9 +65,6 @@ Error generating stack: `+u.message+`
           "timezone": "Europe/Oslo",
           "backgroundColor": "rgba(15, 15, 15, 1)",
           "gridColor": "rgba(242, 54, 69, 0.06)",
-          "watchlist": [
-            "OSL:HEX"
-          ],
           "withdateranges": true,
           "range": "YTD",
           "compareSymbols": [],
