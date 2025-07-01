@@ -1,10 +1,11 @@
+import {type ReactNode} from "react";
 
 
 interface ModalProps {
     title: string;
     isOpen: boolean;
     setOpenModal: (val: boolean) => void;
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 export const Modal = ({title, isOpen, setOpenModal,children}: ModalProps) => {
