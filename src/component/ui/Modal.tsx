@@ -6,9 +6,10 @@ interface ModalProps {
     isOpen: boolean;
     setOpenModal: (val: boolean) => void;
     children: ReactNode;
+    className?: string;
 }
 
-export const Modal = ({title, isOpen, setOpenModal,children}: ModalProps) => {
+export const Modal = ({title, isOpen, setOpenModal,children,className}: ModalProps) => {
 
     return (
         isOpen ? (<div
@@ -17,7 +18,7 @@ export const Modal = ({title, isOpen, setOpenModal,children}: ModalProps) => {
                 aria-modal="true"
                 aria-labelledby="modalTitle"
             >
-                <div className="w-7xl rounded-lg bg-white p-6 shadow-lg">
+                <div className={`${className} w-7xl rounded-lg bg-white p-6 shadow-lg`}>
                     <div className="flex items-start justify-between">
                         <h2 id="modalTitle" className="text-xl font-bold text-gray-900 sm:text-2xl">{title}</h2>
 

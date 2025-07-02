@@ -3,6 +3,7 @@ import {JWTDecoder} from "./pages/JWTDecoder.tsx";
 import {QRGenerator} from "./pages/QrCodeGenerator.tsx";
 import {InvestorPage} from "./pages/InvestorPage.tsx";
 import {Buttons} from "./component/ui/Buttons.tsx";
+import {WhatsAppDashboard} from "./pages/chat/WhatsAppDashboard.tsx";
 
 function App() {
     return (
@@ -14,6 +15,9 @@ function App() {
             <InvestorPage/>
             <div>
             <Buttons/>
+            </div>
+            <div className="max-h-1">
+                <WhatsAppDashboard/>
             </div>
         </div>
     )
